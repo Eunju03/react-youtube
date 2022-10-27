@@ -6,11 +6,12 @@ const VideoDetail = ({video, video: { snippet }}) => (
 		<iframe 
 			className={styles.video}
 			type="text/html"
+			title="youtube video player"
 			width="100%" 
 			height="500px"
 			src={`https://www.youtube.com/embed/${video.id}`}
-			frameborder="0" 
-			allowfullscreen
+			frameBorder="0" 
+			allowFullScreen
 		></iframe>
 		{/* {video.snippet.}이 반복되니까 위에  video: { snippet } 쓰고 video.을 지워서 사용해도 됨 */}
 		<h2>{snippet.title}</h2>  
